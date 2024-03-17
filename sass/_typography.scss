@@ -1,0 +1,77 @@
+.btn {
+  display: inline-block;
+  padding: 10px 45px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  position: relative;
+  background-color: transparent;
+  border-radius: 2px;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--raleway);
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0.115em;
+  line-height: 0.9375rem;
+  min-width: 170px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &::before,
+  &::after {
+    background-color: var(--white);
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 30%;
+  }
+  span {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1px;
+      height: 30%;
+      background-color: var(--white);
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--lite-blue);
+  }
+
+  &.bg-btn {
+    border-color: var(--org-black);
+    color: var(--black);
+
+    &::before,
+    &::after {
+      background-color: var(--org-black);
+    }
+    span {
+      &::before,
+      &::after {
+        background-color: var(--org-black);
+      }
+    }
+    &:hover {
+      background-color: var(--org-black);
+      color: var(--white);
+    }
+  }
+}
