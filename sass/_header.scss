@@ -31,11 +31,11 @@
       flex-basis: 80%;
       max-width: 80%;
       @include d-flex;
-      justify-content: flex-end;
       .header_menu {
         list-style: none;
         @include d-flex;
         align-items: center;
+        margin-left: auto;
         li {
           a {
             text-decoration: none;
