@@ -141,6 +141,10 @@ p {
   --raleway: "Raleway";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--org-white-2);
 }
@@ -457,4 +461,92 @@ body {
 }
 .content-block .container .info-wrap .detail--box_body ul li + li {
   margin-top: 14px;
+}
+
+.seperator {
+  max-width: 170px;
+  margin-inline: auto;
+}
+
+.page--content {
+  padding: 80px 0;
+}
+.page--content .container .title-block {
+  margin-bottom: 30px;
+}
+.page--content .container .title-block h3 {
+  font-size: 32px;
+  color: var(--org-black);
+  font-family: var(--raleway);
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.page--content .container .title-block h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 2px;
+  background-color: var(--lite-blue);
+}
+
+.using-skills,
+.learning-skills {
+  max-width: 600px;
+  margin-inline: auto;
+}
+.using-skills span,
+.learning-skills span {
+  display: inline-block;
+  font-size: 28px;
+  color: var(--org-black);
+  font-family: var(--raleway);
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+}
+.using-skills .skill-item-wrap,
+.learning-skills .skill-item-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 40px;
+}
+.using-skills .skill-item-wrap .skill-item,
+.learning-skills .skill-item-wrap .skill-item {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.using-skills .skill-item-wrap .skill-item img,
+.learning-skills .skill-item-wrap .skill-item img {
+  display: block;
+  margin-inline: auto;
+}
+.using-skills .skill-item-wrap .skill-item p,
+.learning-skills .skill-item-wrap .skill-item p {
+  color: #868a9b;
+  font-size: 14px;
+  font-family: var(--raleway);
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.using-skills .skill-item-wrap .skill-item i,
+.learning-skills .skill-item-wrap .skill-item i {
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+
+.learning-skills {
+  margin-top: 40px;
 }/*# sourceMappingURL=screen.css.map */
